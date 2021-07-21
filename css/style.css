@@ -5,6 +5,8 @@
   --accent-color: #ff6c00;
   /*цвет неактивного элемента */
   --inactive-color: #9da4bd99;
+  --backgroud-color:#F7F7F7;
+
 }
 
 body {
@@ -116,8 +118,7 @@ text-transform: uppercase;
 }
 
 .section-description {
-    color: var(--text-color);
-    font-weight: 400;
+        font-weight: 400;
 font-size: 14px;
 line-height: 1.86;
 }
@@ -138,10 +139,28 @@ letter-spacing: 0.09em;
 text-transform: uppercase;
 }
 
-primary-btn darken
+.darken{
+    color: var(--title-color);
+    }
 
 
-.price-list{
+.number-box {
+    background-color: var(--backgroud-color);
     display: inline-block;
-    width: 585px;
-height: 240px;
+}
+.number-box p{
+    font-weight: 700;
+font-size: 42px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: var(--title-color);
+}
+.number-box span{
+    font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+text-align: center;
+color: var(--title-color);
+}
