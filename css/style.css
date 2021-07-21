@@ -1,0 +1,60 @@
+:root {
+    --title-color:#303030;
+    --text-color: #555555;
+    --secondary-color:#FFFFFF;
+    --accent-color: #FF6C00;
+    /*цвет неактивного элемента */
+--inactive-color:#9DA4BD99;
+
+}
+
+
+body{
+    color:var(--text-color);
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+/* навигация шапка */
+
+.nav-links{
+    list-style: none;
+}
+.nav-link,
+.phone-link{
+    text-decoration:none;
+}
+.social-link{
+    text-decoration:none;
+}
+
+.hero-title {
+color: var(--secondary-color);
+/* цвет фона на время чтоб не потерять заголовок */
+background-color:var(--text-color); 
+
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+.section-title{
+    color: var(--title-color);
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+.section-subtitle{
+    color: var(--title-color);
+
+    line-height: 1.67;
+
+}
