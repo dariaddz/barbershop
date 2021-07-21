@@ -1,60 +1,147 @@
 :root {
-    --title-color:#303030;
-    --text-color: #555555;
-    --secondary-color:#FFFFFF;
-    --accent-color: #FF6C00;
-    /*цвет неактивного элемента */
---inactive-color:#9DA4BD99;
+  --title-color: #303030;
+  --text-color: #555555;
+  --secondary-color: #ffffff;
+  --accent-color: #ff6c00;
+  /*цвет неактивного элемента */
+  --inactive-color: #9da4bd99;
+}
 
+body {
+  color: var(--text-color);
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
 }
 
 
-body{
-    color:var(--text-color);
 
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400px;
-    font-size: 18px;
-    letter-spacing: 0.02em;
+ul{
+    margin: 0;
+    padding: 0;
 }
+
+
+/* sidebar */
+.social-link{
+
+color: var(--title-color);  
+  font-weight: 600;
+font-size: 11px;
+line-height: 11.365px;
+}
+
+
 
 /* навигация шапка */
 
 .nav-links{
-    list-style: none;
+    background-color: skyblue;
+    display:inline-block
+}
+
+
+.btn-box{
+    background-color: skyblue;
+    display:inline-block
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+
 }
 .nav-link,
-.phone-link{
-    text-decoration:none;
+.phone-link {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
-.social-link{
-    text-decoration:none;
+
+.nav-link:hover,
+.nav-link:focus,
+.phone-link:hover,
+.phone-link:focus,
+.social-link:hover,
+.social-link:focus {
+    color: var(--accent-color);
+}
+
+.social-link {
+  text-decoration: none;
 }
 
 .hero-title {
-color: var(--secondary-color);
-/* цвет фона на время чтоб не потерять заголовок */
-background-color:var(--text-color); 
+  color: var(--secondary-color);
+  /* цвет фона на время чтоб не потерять заголовок */
+  background-color: var(--text-color);
 
-    font-family: "raleway";
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
 }
 
-.section-title{
-    color: var(--title-color);
+.section-title {
+  color: var(--title-color);
 
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
 }
-.section-subtitle{
-    color: var(--title-color);
+.section-subtitle {
+  color: var(--title-color);
 
-    line-height: 1.67;
-
+  line-height: 1.67;
 }
+
+/* на уроке */
+.hero-description {
+  color: var(--secondary-color);
+  line-height: 1.67;
+}
+
+.suptitle-secondary{
+color: var(--inactive-color)
+
+font-weight: 600;
+font-size: 11px;
+line-height: 0.09;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.section-description {
+    color: var(--text-color);
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.86;
+}
+
+.primary-btn{
+    color: var(--secondary-color);
+    background-color: navajowhite;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    text-decoration: none;
+
+    font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+}
+
+primary-btn darken
+
+
+.price-list{
+    display: inline-block;
+    width: 585px;
+height: 240px;
