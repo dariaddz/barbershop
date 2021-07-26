@@ -3,6 +3,7 @@
   --text-color: #555555;
   --secondary-color: #ffffff;
   --accent-color: #ff6c00;
+  --light-grey-color:#9DA4BD;
   /*цвет неактивного элемента */
   --inactive-color: #9da4bd99;
   --backgroud-color:#F7F7F7;
@@ -232,4 +233,51 @@ color:var(--title-color)
 width:500px;
 display:block;
 margin-left:35px;
+}
+
+/* price */
+
+.lighten{
+  color: var(--secondary-color);
+}
+
+.price-box{
+  display: flex;
+  justify-content:space-between;
+}
+
+.price-list{
+  padding:30px 40px;
+  justify-content:flex-start;
+width:585px;
+}
+
+.price-item{
+  display: flex;
+  justify-content:space-between;
+
+  line-height: 1.67;
+color:var(--light-grey-color);
+   }
+  .price-item:not(:last-child){
+    margin-bottom:20px;
+    }
+
+.price-part{
+  margin-bottom: 20px;
+}
+
+.price-title{
+  margin-bottom: 44px;
+}
+.price-btn {
+  display: flex;
+  justify-content:center;
+}
+
+.left-list{
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.right-list{
+background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
