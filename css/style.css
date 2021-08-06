@@ -194,30 +194,6 @@ nav.navbar {
   color: var(--title-color);
 }
 
-.number-box {
-  background-color: var(--backgroud-color);
-  display: inline-block;
-}
-.number-box p {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: var(--title-color);
-}
-.number-box span {
-  display: block;
-  width: 122px;
-  height: 30px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-align: center;
-  color: var(--title-color);
-}
-
 .header {
   height: 100vh;
   width: 100%;
@@ -307,6 +283,10 @@ nav.navbar {
   color: var(--secondary-color);
 }
 
+.price {
+  background-color: #111319;
+  background-image: url(../images/bgrd-price.jpg);
+}
 .price-box {
   display: flex;
   justify-content: space-between;
@@ -367,11 +347,35 @@ nav.navbar {
   width: 500px;
   margin-right: 70px;
 }
+
+.number-box p {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--title-color);
+}
+.number--description {
+  display: block;
+  width: 122px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--title-color);
+}
 .number-box {
+  display: inline-block;
+  text-align: center;
+
   width: 170px;
   height: 133px;
   padding: 20px 24px;
-  text-align: center;
+
+  background-color: var(--backgroud-color);
 }
 .number-box:nth-child(2n + 1) {
   margin-right: 30px;
@@ -381,9 +385,15 @@ nav.navbar {
 .number-box:nth-child(-n + 2) {
   margin-bottom: 30px;
 }
-.number-box:lasd-child {
+.number-box:last-child {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.plus {
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--accent-color);
 }
 
 /* Our masters */
@@ -418,6 +428,18 @@ nav.navbar {
 .master-social-box {
   display: flex;
   justify-content: center;
+}
+
+.master-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.master-social-link svg {
+  width: 20px;
+  height: 20px;
 }
 .master-social-link:not(:last-child) {
   margin-right: 10px;
