@@ -246,7 +246,8 @@ nav.navbar {
   color: var(--title-color);
 }
 
-.suptitle-primary::before {
+.suptitle-primary::before,
+.social-box::before {
   content: '';
   background: var(--title-color);
   width: 60px;
@@ -556,3 +557,70 @@ address {
 .schedule-box {
   display: block;
 } */
+
+.footer {
+  display: flex;
+  width: 100%;
+  min-height: 645px;
+  /* height: 100%; */
+  background-color: #191c26;
+  background-image: url(../images/Bgrd-contacts.png);
+  background-size: 50%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.footer-container {
+  display: flex;
+}
+.footer-form,
+.footer-contacts {
+  width: 50%;
+  height: inherit;
+  padding-top: 130px;
+  outline: 1px solid yellow;
+}
+
+.footer-form {
+}
+.footer-contacts {
+  margin-left: 100px;
+}
+
+.contacts-item {
+  margin-bottom: 20px;
+}
+
+.contacts-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+address {
+  font-style: normal;
+  width: 230px;
+}
+
+.contacts-box > a {
+  color: var(--light-grey-color);
+}
+.email {
+  text-decoration-line: underline;
+}
+
+.schedule-box {
+  display: flex;
+  flex-direction: column;
+  color: var(--light-grey-color);
+  margin-top: 50px;
+}
+
+/* copyright */
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 127px;
+}
