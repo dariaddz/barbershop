@@ -218,7 +218,11 @@ nav.navbar {
 
 .slider {
   width: calc(100% - 100px);
-  background-image: url(../images/slider/Slider\ img\ 3.jpg);
+  background-image: linear-gradient(277deg, #0000001c, #00000094),
+    url(../images/slider/Slider\ img\ 3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* about us */
@@ -279,14 +283,21 @@ nav.navbar {
 
 /* price */
 
+.price-section {
+  background-image: url(../images/bgrd-price.png);
+  background-color: rgba(17, 19, 25, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .lighten {
   color: var(--secondary-color);
 }
 
 .price {
-  background-color: #111319;
-  background-image: url(../images/bgrd-price.jpg);
 }
+
 .price-box {
   display: flex;
   justify-content: space-between;
@@ -322,10 +333,10 @@ nav.navbar {
   justify-content: center;
 }
 
-.left-list {
+.price-list:nth-child(odd) {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-.right-list {
+.price-list:nth-child(even) {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
@@ -397,6 +408,9 @@ nav.navbar {
 }
 
 /* Our masters */
+.master-box {
+  background-color: var(--backgroud-color);
+}
 
 .masters-list {
   display: flex;
@@ -431,16 +445,27 @@ nav.navbar {
 }
 
 .master-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--secondary-color);
 }
+.master-social-link:hover svg,
+.master-social-link:focus svg {
+  fill: var(--accent-color);
+}
 
 .master-social-link svg {
   width: 20px;
   height: 20px;
+  fill: var(--title-color);
+  transition: fill 250ms linear;
 }
+
 .master-social-link:not(:last-child) {
   margin-right: 10px;
 }
@@ -454,19 +479,23 @@ nav.navbar {
 }
 
 /* Footer */
-.footer {
+/* .footer-section {
+  background-color: #191c26;
   display: flex;
 }
 
+width: 50%;
+background-image: url(../images/Bgrd-contacts.png);
+
+.footer {
+}
+
 .footer-contacts {
-  width: 570px;
+  width: 50%;
   margin-right: 30px;
-  background: #191c26;
 }
 
 .contacts-schedule {
-  width: 570px;
-  background-color: mediumaquamarine;
   color: var(--light-grey-color);
   line-height: 1.67;
 }
@@ -504,7 +533,6 @@ address {
 }
 
 .schedule-box {
-  background-color: lightsalmon;
   color: var(--light-grey-color);
 }
 
@@ -527,4 +555,4 @@ address {
 
 .schedule-box {
   display: block;
-}
+} */
