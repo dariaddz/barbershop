@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
+
+
   <body>
     <header class="header">
       <!-- Slider -->
@@ -28,6 +30,14 @@
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
           </p>
         </div>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="social-box">
+            <a href="#" class="social-link siderbar-box">Instragram</a>
+            <a href="#" class="social-link siderbar-box">YouTube</a>
+          </div>
+        </aside>
 
         <!-- Navbar -->
         <nav class="navbar container">
@@ -46,13 +56,10 @@
           </div>
         </nav>
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-          <div class="social-box">
-            <a href="#" class="social-link siderbar-box">Instragram</a>
-            <a href="#" class="social-link siderbar-box">YouTube</a>
-          </div>
-        </aside>
+        
+  </div>
+    </header>
+
 
         <!-- <div class="slide">
           <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
@@ -68,8 +75,8 @@
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
           </p>
         </div> -->
-      </div>
-    </header>
+    
+
 
     <!-- Main content -->
     <main class="layout">
@@ -282,10 +289,22 @@
         <div class="container">
           <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
           <div class="image-gallery">
-            <img src="./images/gallery/image-1.jpg" alt="Стрижка машинкой" />
-            <img src="./images/gallery/image-2.jpg" alt="Намазывание пеной" />
-            <img src="./images/gallery/image-3.jpg" alt="Пропаривание лица" />
-            <img src="./images/gallery/image-4.jpg" alt="Стрижка опасной бритвой" />
+            <div class="gallery-card">
+              <img src="./images/gallery/image-1.jpg" alt="Стрижка машинкой" />
+              <div class="gallery-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia maxime ad magni praesentium, culpa sequi nemo possimus voluptates sapiente at?</div>
+            </div>
+            <div class="gallery-card"> 
+              <img src="./images/gallery/image-2.jpg" alt="Намазывание пеной" />
+              <div class="gallery-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia maxime ad magni praesentium, culpa sequi nemo possimus voluptates sapiente at?</div>
+            </div>
+            <div class="gallery-card"> 
+              <img src="./images/gallery/image-3.jpg" alt="Пропаривание лица" />
+              <div class="gallery-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia maxime ad magni praesentium, culpa sequi nemo possimus voluptates sapiente at?</div>
+            </div>
+            <div class="gallery-card"> 
+              <img src="./images/gallery/image-4.jpg" alt="Стрижка опасной бритвой" />
+              <div class="gallery-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia maxime ad magni praesentium, culpa sequi nemo possimus voluptates sapiente at?</div>
+            </div>
           </div>
         </div>
       </section>
@@ -313,13 +332,13 @@
     <div class="footer-contacts">
       <h2 class="section-title lighten footer-title">Контакты</h2>
       <div class="contacts-box">
-        <address class="contacts-item">ул. Васильковая, 7А Киев, 08132</address>
-        <a class="contacts-item" href="tel:+380441111111">+38 044 111 11 11</a>
+        <address class="address contacts-item"> ул. Васильковая, 7А Киев, 08132</address>
+        <a class="phone-footer contacts-item" href="tel:+380441111111">+38 044 111 11 11</a>
         <a class="email contacts-item" href="mailto:barbershop@email.com"
           >barbershop@email.com</a
         >
         <div class="schedule-box">
-        <span class="suptitle-secondary contacts-item">Время работы</span>
+        <span class="suptitle-white contacts-item">Время работы</span>
         <p class="">Ежедневно с 9:00 до 22:00</p>
         </div>
       </div>
@@ -329,43 +348,6 @@
      </footer>
 
 
-    <!-- <section class="section footer-section">
-      <div class="container">
-        <footer class="footer" id="footer">
-          <div class="footer-contacts">
-            <h2 class="section-title lighten contacts-title">Онлайн-запись</h2>
-            <div class="name-message">
-              <p class="name">Имя*</p>
-              <p class="phone">Телефон*</p>
-              <p class="message">Сообщение</p>
-            </div>
-            <form action="">
-              <input type="submit" class="primary-btn" />
-            </form>
-          </div>
-
-          <div class="contacts-schedule">
-            <h2 class="section-title lighten footer-title">Контакты</h2>
-            <div class="contacts-box">
-              <address class="contacts-item">ул. Васильковая, 7А Киев, 08132</address>
-              <a class="contacts-item" href="tel:+380441111111">+38 044 111 11 11</a>
-              <a class="email contacts-item" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
-            </div>
-
-            <div class="schedule-box">
-              <span class="suptitle-secondary contacts-item">Время работы</span>
-              <p class="">Ежедневно с 9:00 до 22:00</p>
-            </div>
-          </div>
-        </footer> -->
-
-
-
-
-
-      
     </section>
     <div class="copyright container">
       <p class="copy-text">&copy; Copyright <span>2020</span></p>

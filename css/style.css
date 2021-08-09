@@ -46,7 +46,7 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: palegoldenrod;
+  /* background-color: palegoldenrod; */
 }
 .section {
   padding-top: 130px;
@@ -150,7 +150,8 @@ nav.navbar {
   text-transform: uppercase;
 }
 
-.suptitle-secondary::before {
+.suptitle-secondary::before,
+.suptitle-white::before {
   content: '';
   background: rgba(157, 164, 189, 0.6);
   width: 60px;
@@ -158,9 +159,6 @@ nav.navbar {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
-}
-.contacts-item::before {
-  background: rgba(157, 164, 189, 0.4);
 }
 
 .section-description {
@@ -479,90 +477,33 @@ nav.navbar {
   margin-top: 44px;
 }
 
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-description {
+  position: absolute;
+  /* top: 0; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(0 0 0 / 78%);
+  color: var(--inactive-color);
+  bottom: -100%;
+  transition: transform 300ms ease-out;
+}
+
+.gallery-card:hover .gallery-description,
+.gallery-card:focus .gallery-description {
+  transform: translateY(-100%);
+}
 /* Footer */
-/* .footer-section {
-  background-color: #191c26;
-  display: flex;
-}
-
-width: 50%;
-background-image: url(../images/Bgrd-contacts.png);
-
-.footer {
-}
-
-.footer-contacts {
-  width: 50%;
-  margin-right: 30px;
-}
-
-.contacts-schedule {
-  color: var(--light-grey-color);
-  line-height: 1.67;
-}
-
-.footer-title {
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-.contacts-title {
-  margin-top: 0;
-  margin-bottom: 44px;
-}
-.contacts-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.contacts-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-.contacts-item:last-child {
-  margin-bottom: 70px;
-}
-
-address {
-  font-style: normal;
-}
-
-.contacts-box > a {
-  color: var(--light-grey-color);
-}
-.email {
-  text-decoration-line: underline;
-}
-
-.schedule-box {
-  color: var(--light-grey-color);
-}
-
-.name-message {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 44px;
-}
-
-.name {
-  width: 270px;
-}
-
-.phone {
-  width: 206px;
-}
-.message {
-  width: 560px;
-}
-
-.schedule-box {
-  display: block;
-} */
 
 .footer {
   display: flex;
   width: 100%;
   min-height: 645px;
-  /* height: 100%; */
   background-color: #191c26;
   background-image: url(../images/Bgrd-contacts.png);
   background-size: 50%;
@@ -597,16 +538,48 @@ address {
   margin-top: 20px;
 }
 
-address {
+.address {
+  position: relative;
   font-style: normal;
   width: 230px;
+  margin-left: 40px;
+  color: var(--light-grey-color);
+}
+.address::before,
+.email::before,
+.phone-footer::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+
+  width: 24px;
+  height: 24px;
+}
+
+.address::before {
+  background-image: url(../images/icons/map-pin.svg);
 }
 
 .contacts-box > a {
   color: var(--light-grey-color);
+  position: relative;
 }
 .email {
   text-decoration-line: underline;
+  position: absolute;
+  margin-left: 40px;
+}
+
+.phone-footer {
+  position: absolute;
+  margin-left: 40px;
+}
+.email::before {
+  background-image: url(../images/icons/mail.svg);
+}
+
+.phone-footer::before {
+  background-image: url(../images/icons/phone.svg);
 }
 
 .schedule-box {
@@ -614,6 +587,16 @@ address {
   flex-direction: column;
   color: var(--light-grey-color);
   margin-top: 50px;
+}
+
+.suptitle-white {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
 }
 
 /* copyright */
