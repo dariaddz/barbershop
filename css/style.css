@@ -53,12 +53,14 @@ a {
   padding-bottom: 130px;
   /* outline: 1px solid orchid; */
 }
+
 /* sidebar */
 .social-link {
   color: var(--title-color);
   font-weight: 600;
   font-size: 11px;
   line-height: 11.365px;
+  margin-left: 40px;
 }
 
 /* навигация шапка */
@@ -68,7 +70,10 @@ nav.navbar {
   margin-top: 40px;
 }
 .logo-img {
-  margin: 0 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 32px;
   width: 69px;
   height: 55px;
 }
@@ -194,13 +199,6 @@ nav.navbar {
   color: var(--title-color);
 }
 
-.siderbar-box {
-  position: absolute;
-  display: flex;
-  transform: rotate(-90deg);
-  bottom: 90px;
-}
-
 /* hero */
 .hero {
   display: flex;
@@ -212,12 +210,21 @@ nav.navbar {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-end;
   width: 14%;
   height: 680px;
-  padding-top: 32px;
-  padding-right: 30px;
+
   background-color: #fff;
+}
+
+.sidebar-box {
+  position: absolute;
+
+  transform: rotate(-90deg);
+  right: 0;
+  bottom: 130px;
+
+  min-width: auto;
 }
 
 /* slider */
@@ -544,7 +551,36 @@ nav.navbar {
   padding-top: 130px;
 }
 
-.footer-form {
+.name-message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 560px;
+}
+
+.name-message p {
+  margin-bottom: 30px;
+}
+
+.name-message p:nth-child(1) {
+  margin-right: 30px;
+}
+.name-message p:not(:last-child) {
+  margin-top: 24px;
+}
+.name-message p::after {
+  content: '';
+
+  background: var(--title-color);
+  min-width: 260px;
+  height: 1px;
+  display: block;
+  vertical-align: middle;
+}
+
+.input {
+  background-color: #191c26;
 }
 .footer-contacts {
   margin-left: 100px;
