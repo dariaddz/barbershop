@@ -194,7 +194,9 @@ nav.navbar {
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
-
+.primary-btn--footer {
+  background-color: inherit;
+}
 .darken {
   color: var(--title-color);
 }
@@ -530,46 +532,43 @@ nav.navbar {
 }
 /* Footer */
 
-.footer {
-  display: flex;
-  width: 100%;
-  min-height: 645px;
-  background-color: #191c26;
-  background-image: url(../images/Bgrd-contacts.png);
-  background-size: 50%;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.footer-container {
-  display: flex;
-}
-.footer-form,
-.footer-contacts {
-  width: 50%;
-  height: inherit;
-  padding-top: 130px;
-}
-
-.name-message {
-  display: flex;
+/* .name-message {
+  display: block; */
+/* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-
-  width: 560px;
-}
-
-.name-message p {
+  flex-wrap: wrap; */
+/* } */
+/* 
+.name-message label {
+  position: relative;
   margin-bottom: 30px;
 }
 
-.name-message p:nth-child(1) {
+.name-message label:nth-child(1) {
   margin-right: 30px;
 }
-.name-message p:not(:last-child) {
+.name-message label:not(:last-child) {
   margin-top: 24px;
 }
-.name-message p::after {
+
+.required label {
+  position: absolute;
+  top: 0;
+}
+.name,
+.phone,
+.message {
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  resize: none;
+  cursor: pointer;
+}
+
+.message {
+  width: 100%;
+} */
+/* .name-message label::after {
   content: '';
 
   background: var(--title-color);
@@ -577,91 +576,10 @@ nav.navbar {
   height: 1px;
   display: block;
   vertical-align: middle;
-}
+} */
 
-.input {
-  background-color: #191c26;
-}
-.footer-contacts {
-  margin-left: 100px;
-}
-
-.contacts-item {
-  margin-bottom: 20px;
-}
-
-.contacts-box {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.address {
-  position: relative;
-  font-style: normal;
-  width: 230px;
-  margin-left: 40px;
-  color: var(--light-grey-color);
-}
-.address::before,
-.email::before,
-.phone-footer::before {
-  content: '';
-  position: absolute;
-  left: -40px;
-
-  width: 24px;
-  height: 24px;
-}
-
-.address::before {
-  background-image: url(../images/icons/map-pin.svg);
-}
-
-.contacts-box > a {
-  color: var(--light-grey-color);
-  position: relative;
-}
-.email {
-  text-decoration-line: underline;
-  position: absolute;
-  margin-left: 40px;
-}
-
-.phone-footer {
-  position: absolute;
-  margin-left: 40px;
-}
-.email::before {
-  background-image: url(../images/icons/mail.svg);
-}
-
-.phone-footer::before {
-  background-image: url(../images/icons/phone.svg);
-}
-
-.schedule-box {
-  display: flex;
-  flex-direction: column;
-  color: var(--light-grey-color);
-  margin-top: 50px;
-}
-
-.suptitle-white {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--secondary-color);
-}
+/* .input {
+  background-color: none;
+} */
 
 /* copyright */
-
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 127px;
-}
