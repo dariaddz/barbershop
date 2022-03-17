@@ -187,6 +187,8 @@ nav.navbar {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
 
   font-weight: 600;
   font-size: 12px;
@@ -324,9 +326,6 @@ nav.navbar {
 
 .lighten {
   color: var(--secondary-color);
-}
-
-.price {
 }
 
 .price-box {
@@ -531,55 +530,27 @@ nav.navbar {
   transform: translateY(-100%);
 }
 /* Footer */
-
-/* .name-message {
-  display: block; */
-/* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
-/* } */
-/* 
-.name-message label {
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9da4bd66;
+  outline: none;
+}
+.footer-form .field-label {
   position: relative;
-  margin-bottom: 30px;
+  display: inline-block;
 }
-
-.name-message label:nth-child(1) {
-  margin-right: 30px;
-}
-.name-message label:not(:last-child) {
-  margin-top: 24px;
-}
-
-.required label {
+.footer-form .field-label legend {
   position: absolute;
   top: 0;
+  transition: transform 0.1s linear;
+  color: #9da4bd66;
 }
-.name,
-.phone,
-.message {
-  background: inherit;
-  border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  resize: none;
-  cursor: pointer;
+.field-label:hover input {
+  background-color: var(--secondary-color);
 }
-
-.message {
-  width: 100%;
-} */
-/* .name-message label::after {
-  content: '';
-
-  background: var(--title-color);
-  min-width: 260px;
-  height: 1px;
-  display: block;
-  vertical-align: middle;
-} */
-
-/* .input {
-  background-color: none;
-} */
+.footer-form .input:focus + legend {
+  transform: translate(-2px, -24px);
+}
 
 /* copyright */
