@@ -1,0 +1,59 @@
+.suptitle-primary {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.suptitle-primary::before,
+.social-box::before {
+  content: '';
+  background: $title-color;
+  width: 60px;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.section-title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: $title-color;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.section-subtitle {
+  margin-bottom: 20px;
+
+  color: $title-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+}
+.suptitle-secondary {
+  margin-left: 100px;
+  color: $inactive-color;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 0.09;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.suptitle-secondary::before,
+.suptitle-white::before {
+  content: '';
+  background: rgba(157, 164, 189, 0.6);
+  width: 60px;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}

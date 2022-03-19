@@ -1,0 +1,25 @@
+.primary-btn {
+  display: inline-block;
+
+  color: $secondary-color;
+
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.primary-btn--footer {
+  background-color: inherit;
+}
+.darken {
+  color: $title-color;
+}

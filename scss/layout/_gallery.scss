@@ -1,0 +1,29 @@
+/* Gallery */
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  width: 20%;
+}
+
+.gallery-description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.78);
+  color: $inactive-color;
+  bottom: -100%;
+  transition: transform 300ms ease-out;
+}
+
+.gallery-card:hover .gallery-description,
+.gallery-card:focus .gallery-description {
+  transform: translateY(-100%);
+}

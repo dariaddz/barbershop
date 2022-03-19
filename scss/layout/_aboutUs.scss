@@ -1,0 +1,17 @@
+// /* about us */
+
+.about-box {
+  display: flex;
+}
+.about-image-box {
+  display: flex;
+}
+.about-image-box > img {
+  margin-right: 30px;
+}
+
+.description-container {
+  width: 500px;
+  display: block;
+  margin-left: 35px;
+}

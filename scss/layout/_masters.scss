@@ -1,0 +1,62 @@
+/* Our masters */
+.master-box {
+  background-color: $backgroud-color;
+}
+
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.master-card {
+  margin-top: 24px;
+}
+
+.master-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.master-text > p {
+  line-height: 1.38;
+  color: $title-color;
+  margin-bottom: 8px;
+}
+
+.master-text > span {
+  font-size: 14px;
+  line-height: 1.36;
+  color: $accent-color;
+}
+
+.master-social-box {
+  display: flex;
+  justify-content: center;
+}
+
+.master-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+}
+.master-social-link:hover svg,
+.master-social-link:focus svg {
+  fill: $accent-color;
+}
+
+.master-social-link svg {
+  width: 20px;
+  height: 20px;
+  fill: $title-color;
+  transition: fill 250ms linear;
+}
+
+.master-social-link:not(:last-child) {
+  margin-right: 10px;
+}

@@ -1,0 +1,154 @@
+/* sidebar */
+.social-link {
+  color: $title-color;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11.365px;
+  margin-left: 40px;
+}
+
+/* навигация шапка */
+nav.navbar {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.logo-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 32px;
+  width: 69px;
+  height: 55px;
+}
+
+.phone-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.btn-box {
+  margin-left: auto;
+}
+
+.btn-box > a {
+  margin-left: 40px;
+}
+.nav-links > li {
+  margin: 0 0 0 40px;
+  list-style: none;
+  display: inline-block;
+}
+.nav-link,
+.phone-link {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.phone-link:hover,
+.phone-link:focus,
+.social-link:hover,
+.social-link:focus {
+  color: $accent-color;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.hero-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+
+  color: $secondary-color;
+
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+.hero-description {
+  margin-left: 100px;
+  margin-bottom: 140px;
+
+  color: $light-grey-color;
+  line-height: 1.67;
+}
+
+.section-description {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+/* hero */
+.hero {
+  display: flex;
+}
+
+/* sidebar */
+
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 14%;
+  height: 680px;
+
+  background-color: #fff;
+}
+
+.sidebar-box {
+  position: absolute;
+
+  transform: rotate(-90deg);
+  right: 0;
+  bottom: 130px;
+
+  min-width: auto;
+}
+
+/* slider */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+  height: 680px;
+  background-image: linear-gradient(277deg, #0000001c, #00000094),
+    url(../images/slider/Slide-img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding-right: 55px;
+}
+
+.slide {
+  padding-top: 190px;
+  position: relative;
+}
+
+.back-frwrd {
+  display: block;
+  margin-bottom: 50px;
+  align-items: flex-end;
+}

@@ -1,0 +1,13 @@
+@import './utils/variables/colors';
+@import './base/normalize';
+@import './components/buttons';
+@import './components/titles';
+
+// layout - parts of website
+@import './layout/header';
+@import './layout/aboutUs';
+@import './layout/price';
+@import './layout/whyUs';
+@import './layout/masters';
+@import './layout/gallery';
+@import './layout/footer';

@@ -1,3 +1,4 @@
+/* Footer */
 .footer {
   display: flex;
   width: 100%;
@@ -34,10 +35,7 @@
 .required > label > .input {
   width: 100%;
 }
-.textarea {
-  width: 100%;
-  resize: none;
-}
+
 .footer-contacts {
   margin-left: 100px;
 }
@@ -57,7 +55,7 @@
   font-style: normal;
   width: 230px;
   margin-left: 40px;
-  color: var(--light-grey-color);
+  color: $light-grey-color;
 }
 .address::before,
 .email::before,
@@ -75,7 +73,7 @@
 }
 
 .contacts-box > a {
-  color: var(--light-grey-color);
+  color: $light-grey-color;
   position: relative;
 }
 .email {
@@ -99,7 +97,7 @@
 .schedule-box {
   display: flex;
   flex-direction: column;
-  color: var(--light-grey-color);
+  color: $light-grey-color;
   margin-top: 50px;
 }
 
@@ -110,7 +108,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: var(--secondary-color);
+  color: $secondary-color;
 }
 /* copyright */
 .copyright {
@@ -119,3 +117,52 @@
   align-items: center;
   min-height: 127px;
 }
+
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9da4bd66;
+  outline: none;
+  margin-bottom: 45px;
+  width: 100%;
+  color: $secondary-color;
+}
+.footer-form .field-label {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 15px);
+}
+.footer-form .field-label legend {
+  position: absolute;
+  top: 0;
+  transition: transform 0.1s linear;
+  color: #9da4bd66;
+}
+
+.field-label:hover input {
+  border-color: $secondary-color;
+}
+.footer-form .input:focus + legend {
+  transform: translate(-2px, -24px);
+  color: $secondary-color;
+}
+.footer-form .input:hover + legend {
+  transform: translate(-2px, -24px);
+  color: $secondary-color;
+}
+.textarea {
+  width: 100%;
+  display: block;
+  resize: none;
+  margin-bottom: 45px;
+}
+
+.textarea::placeholder {
+  color: #9da4bd66;
+}
+/* copyright */
