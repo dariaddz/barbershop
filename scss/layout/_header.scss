@@ -4,7 +4,7 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 11.365px;
-  margin-left: 40px;
+  // margin-left: 40px;
 }
 
 /* навигация шапка */
@@ -16,7 +16,7 @@ nav.navbar {
 .logo-img {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   margin: 32px;
   width: 69px;
   height: 55px;
@@ -106,24 +106,19 @@ nav.navbar {
 /* sidebar */
 
 .sidebar {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 14%;
-  height: 680px;
+  align-items: flex-end;
+  justify-content: center;
+  width: 155px;
+  // height: 100vh;
 
   background-color: #fff;
 }
 
 .sidebar-box {
-  position: absolute;
-
   transform: rotate(-90deg);
-  right: 0;
-  bottom: 130px;
-
-  min-width: auto;
+  display: flex;
+  //   width: 100%;
 }
 
 /* slider */

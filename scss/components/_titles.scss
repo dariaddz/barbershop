@@ -7,8 +7,9 @@
   color: $title-color;
 }
 
-.suptitle-primary::before,
-.social-box::before {
+.suptitle-primary::before
+// .social-box::before
+{
   content: '';
   background: $title-color;
   width: 60px;
