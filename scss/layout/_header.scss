@@ -66,6 +66,7 @@ nav.navbar {
 
 .social-link {
   text-decoration: none;
+  margin-right: 15px;
 }
 
 .hero-title {
@@ -116,7 +117,7 @@ nav.navbar {
 }
 
 .sidebar-box {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateX(190px);
   display: flex;
   //   width: 100%;
 }

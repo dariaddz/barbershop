@@ -1,17 +1,22 @@
 /* Gallery */
 
 .image-gallery {
-  display: flex;
-  justify-content: space-between;
+  //   display: flex;
+  //   justify-content: space-between;
   margin-top: 44px;
 }
 
 .gallery-card {
   position: relative;
   overflow: hidden;
-  width: 20%;
+
+  max-width: 418px;
+  // margin: 30px;
 }
 
+.gallery-picture {
+  width: 100%;
+}
 .gallery-description {
   position: absolute;
   width: 100%;
