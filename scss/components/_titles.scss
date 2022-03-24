@@ -7,8 +7,7 @@
   color: $title-color;
 }
 
-.suptitle-primary::before,
-.social-box::before {
+.suptitle-primary::before {
   content: '';
   background: $title-color;
   width: 60px;
@@ -38,8 +37,7 @@
   font-weight: 400;
   line-height: 1.67;
 }
-.suptitle-secondary {
-  margin-left: 100px;
+.subtitle-secondary {
   color: $inactive-color;
   font-weight: 600;
   font-size: 11px;
@@ -48,8 +46,8 @@
   text-transform: uppercase;
 }
 
-.suptitle-secondary::before,
-.suptitle-white::before {
+.subtitle-secondary::before,
+.subtitle-white::before {
   content: '';
   background: rgba(157, 164, 189, 0.6);
   width: 60px;
