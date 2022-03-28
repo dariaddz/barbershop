@@ -389,21 +389,23 @@ nav.navbar {
 }
 
 .price-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 418px;
+  font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   margin-bottom: 50px;
 }
 
 .price-list {
-  padding: 30px 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 585px;
+}
+
+.price-list .price-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .price-item {
@@ -436,16 +438,6 @@ nav.navbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.price-list:nth-child(odd) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
-.price-list:nth-child(even) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 /* <!-- Why Us --> */
