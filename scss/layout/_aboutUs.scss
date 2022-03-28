@@ -4,17 +4,18 @@
   display: flex;
 }
 .about-image-box {
-  display: flex;
+  display: none;
+  // display: flex;
 }
 .about-image-box > img {
   margin-right: 30px;
 }
 
-.description-container {
-  width: 500px;
-  display: block;
-  margin-left: 35px;
-}
+// .description-container {
+//   width: 500px;
+//   display: block;
+//   margin-left: 35px;
+// }
 .section-description {
   margin-bottom: 20px;
 

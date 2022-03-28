@@ -31,21 +31,23 @@ a {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
+    max-width: 1279px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -104,7 +106,7 @@ a {
   color: #303030;
 }
 
-.suptitle-primary {
+.subtitle-primary {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -113,7 +115,7 @@ a {
   color: #303030;
 }
 
-.suptitle-primary::before {
+.subtitle-primary::before {
   content: '';
   background: #303030;
   width: 60px;
@@ -121,16 +123,16 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
-  margin-top: 4px;
 }
 
 .section-title {
   margin-bottom: 20px;
   margin-top: 20px;
+  width: 330px;
   color: #303030;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
@@ -138,7 +140,7 @@ a {
 .section-subtitle {
   margin-bottom: 20px;
   color: #303030;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.67;
 }
@@ -168,6 +170,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* sidebar */
@@ -220,6 +224,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-width: 480px;
+  max-width: 767px;
 }
 
 .slide {
@@ -325,19 +331,11 @@ nav.navbar {
 }
 
 .about-image-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .about-image-box > img {
   margin-right: 30px;
-}
-
-.description-container {
-  width: 500px;
-  display: block;
-  margin-left: 35px;
 }
 
 .section-description {
@@ -853,7 +851,7 @@ nav.navbar {
 }
 
 .copy-text {
-  padding-top: 35px;
+  margin-top: 20px;
   font-size: 11px;
   line-height: 1.36;
   color: #9da4bd;
