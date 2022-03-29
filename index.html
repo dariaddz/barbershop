@@ -73,7 +73,7 @@
           </div>
           <div class="description-container">
             <span class="subtitle-primary">О нас</span>
-            <h2 class="section-title">Лучший Барбершоп твоего города</h2>
+            <h2 class="section-title about-title">Лучший Барбершоп твоего города</h2>
             <h3 class="section-subtitle">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
             </h3>
@@ -176,13 +176,37 @@
       </section>
 
       <!-- Our masters -->
-      <!-- <section class="section section-box master-box" id="masters-section">
+      <section class="section section-box master-box" id="masters-section">
         <div class="container">
           <span class="subtitle-primary">для настоящих ценителей атмосферы</span>
-          <h2 class="section-title">Наши мастера</h2>
+          <h2 class="section-title masters-title">Наши мастера</h2>
           <ul class="masters-list">
             <li class="master-card">
-              <img src="./images/masters/master-1.jpg" alt="John Smith photo" />
+              <picture class="master-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/masters/master-1-desctop-1x.jpg 1x,
+                    ./images/masters/master-1-desctop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/masters/master-1-tablet-1x.jpg 1x,
+                    ./images/masters/master-1-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/masters/master-1-mobile-1x.jpg 1x,
+                    ./images/masters/master-1-mobile-2x.jpg 2x
+                  "
+                />
+                <img src="./images/masters/master-1-mobile-1x.jpg" alt="John Smith photo" />
+              </picture>
+
               <div class="master-text">
                 <p>John Smith</p>
                 <span>Extreme Barber</span>
@@ -211,7 +235,31 @@
               </div>
             </li>
             <li class="master-card">
-              <img src="./images/masters/master-2.jpg" alt="Michele Doe photo" />
+              <picture class="master-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/masters/master-2-desctop-1x.jpg 1x,
+                    ./images/masters/master-2-desctop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/masters/master-2-tablet-1x.jpg 1x,
+                    ./images/masters/master-2-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/masters/master-2-mobile-1x.jpg 1x,
+                    ./images/masters/master-2-mobile-2x.jpg 2x
+                  "
+                />
+                <img src="./images/masters/master-2-mobile-1x.jpg" alt="Michele Doe photo" />
+              </picture>
+
               <div class="master-text">
                 <p>Michele Doe</p>
                 <span>Extreme Barber</span>
@@ -240,7 +288,31 @@
               </div>
             </li>
             <li class="master-card">
-              <img src="./images/masters/master-3.jpg" alt="Alan Black photo" />
+              <picture class="master-picture">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/masters/master-3-desctop-1x.jpg 1x,
+                    ./images/masters/master-3-desctop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/masters/master-3-tablet-1x.jpg 1x,
+                    ./images/masters/master-3-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/masters/master-3-mobile-1x.jpg 1x,
+                    ./images/masters/master-3-mobile-2x.jpg 2x
+                  "
+                />
+                <img src="./images/masters/master-3-mobile-1x.jpg" alt="Alan Black photo" />
+              </picture>
+
               <div class="master-text">
                 <p>Alan Black</p>
                 <span>Extreme Barber</span>
@@ -270,7 +342,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Gallery -->
       <!-- <section class="section section-box">

@@ -2,7 +2,9 @@
 .master-box {
   background-color: $backgroud-color;
 }
-
+.masters-title {
+  margin-bottom: 45px;
+}
 .masters-list {
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -10,13 +12,14 @@
   }
 }
 
-.master-card {
+.master-card:not(:first-child) {
   margin-top: 24px;
 }
 
 .master-text {
   display: block;
   text-align: center;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 

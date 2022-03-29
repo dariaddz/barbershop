@@ -128,7 +128,7 @@ a {
   color: #303030;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
@@ -320,6 +320,10 @@ nav.navbar {
   color: #ff6c00;
 }
 
+.about-title {
+  font-size: 28px;
+}
+
 .about-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +504,10 @@ nav.navbar {
   background-color: #f7f7f7;
 }
 
+.masters-title {
+  margin-bottom: 45px;
+}
+
 @media screen and (min-width: 1280px) {
   .masters-list {
     display: -webkit-box;
@@ -511,13 +519,14 @@ nav.navbar {
   }
 }
 
-.master-card {
+.master-card:not(:first-child) {
   margin-top: 24px;
 }
 
 .master-text {
   display: block;
   text-align: center;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
