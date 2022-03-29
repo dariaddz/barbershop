@@ -3,20 +3,45 @@
 // .why-us {
 //   display: flex;
 // }
-
+.why-subtitle {
+  margin-bottom: 0;
+}
 .number-container {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 100px;
-  margin-right: 130px;
-  width: 370px;
+  margin-top: 45px;
+  // flex-wrap: wrap;
+
+  // margin-left: 100px;
+  // margin-right: 130px;
+  // width: 370px;
 }
 
-.description-whyus {
-  // width: 500px;
-  // margin-right: 70px;
+// .description-whyus {
+// width: 500px;
+// margin-right: 70px;
+// }
+
+.number-column {
+  width: calc(100% - 90px);
+}
+.number-column:first-child {
+  margin-right: 30px;
 }
 
+.number-column:last-child {
+  margin-top: 35px;
+}
+.number-box {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 30px;
+
+  background-color: $backgroud-color;
+}
+
+.number-box:first-child {
+  margin-bottom: 30px;
+}
 .number-box p {
   font-weight: 700;
   font-size: 42px;
@@ -26,38 +51,27 @@
 
   color: $title-color;
 }
+
 .number--description {
   display: block;
-  width: 122px;
-  height: 30px;
+
+  // width: 122px;
+  // height: 30px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
   color: $title-color;
 }
-.number-box {
-  display: inline-block;
-  text-align: center;
 
-  width: 170px;
-  height: 133px;
-  padding: 20px 24px;
+// .number-box:nth-child(2n + 1) {
+//   margin-right: 30px;
+//   margin-top: -35px;
+// }
 
-  background-color: $backgroud-color;
-}
-.number-box:nth-child(2n + 1) {
-  margin-right: 30px;
-  margin-top: -35px;
-}
-
-.number-box:nth-child(-n + 2) {
-  margin-bottom: 30px;
-}
-.number-box:last-child {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+// .number-box:nth-child(-n + 2) {
+//   margin-bottom: 30px;
+// }
 
 .plus {
   font-size: 16px;
