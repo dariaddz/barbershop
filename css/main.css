@@ -96,6 +96,8 @@ a {
 
 .primary-btn--footer {
   background-color: inherit;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .darken {
@@ -453,11 +455,11 @@ nav.navbar {
 }
 
 .number-column {
-  width: calc(100% - 90px);
+  width: calc(100% - 100px);
 }
 
 .number-column:first-child {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .number-column:last-child {
@@ -629,7 +631,6 @@ nav.navbar {
   display: block;
   width: 100%;
   background-color: #191c26;
-  background-image: url(../images/contacts/contacts-mobile-1x.png);
   background-size: 50%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -642,25 +643,22 @@ nav.navbar {
 
 .footer-form,
 .footer-contacts {
+  padding-top: 85px;
+  padding-bottom: 85px;
   height: inherit;
 }
 
 .contacts-title,
 .footer-title {
   text-align: center;
-  font-size: 42px;
-  margin: 0;
+  font-size: 40px;
+  line-height: 1.16;
+  padding: 0;
+  margin: 0 auto 45px auto;
 }
 
 .footer-form {
   display: block;
-}
-
-.required {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
 }
 
 .required > label {
@@ -689,7 +687,6 @@ nav.navbar {
 .address {
   position: relative;
   font-style: normal;
-  width: 230px;
   margin-left: 40px;
   color: #9da4bd;
 }
@@ -755,14 +752,8 @@ nav.navbar {
 }
 
 .form-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+  text-align: center;
 }
 
 .input {
@@ -777,8 +768,6 @@ nav.navbar {
 
 .footer-form .field-label {
   position: relative;
-  display: inline-block;
-  width: calc(50% - 15px);
 }
 
 .footer-form .field-label legend {
