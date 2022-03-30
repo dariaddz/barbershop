@@ -630,10 +630,8 @@ nav.navbar {
 .footer {
   display: block;
   width: 100%;
+  min-height: 500px;
   background-color: #191c26;
-  background-size: 50%;
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
 
 .footer-container {
@@ -667,6 +665,10 @@ nav.navbar {
 
 .required > label > .input {
   width: 100%;
+}
+
+.footer-contacts {
+  background-image: url(../images/Bgrd-contacts.png);
 }
 
 .contacts-item {
